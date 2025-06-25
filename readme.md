@@ -29,18 +29,11 @@
     ```
 
 2.  **Add the `aicmd` APT Repository:**
-    To allow `apt` to find and install `aicmd`, you need to add its repository to your system.
-
-    First, import the GPG public key used to sign the repository. This ensures the packages you install are authentic and untampered with:
+   To allow apt to find and install aicmd, you need to add its repository to your system.
     ```bash
         wget https://haideryzai.github.io/aicmd-apt/aicmd-apt-repo-key.gpg -O /tmp/aicmd.gpg
-sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/aicmd-repo.gpg /tmp/aicmd.gpg
-echo "deb [signed-by=/etc/apt/trusted.gpg.d/aicmd-repo.gpg] https://haideryzai.github.io/aicmd-apt stable main" | sudo tee /etc/apt/sources.list.d/aicmd.list > /dev/null
-    ```
-
-    Next, add the repository URL to your `sources.list.d`, instructing `apt` where to fetch `aicmd` packages from. **Ensure you use the GitHub Pages URL:**
-    ```bash
-    echo "deb [signed-by=/etc/apt/trusted.gpg.d/aicmd-repo.gpg] [https://haideryzai.github.io/aicmd-apt](https://haideryzai.github.io/aicmd-apt) stable main" | sudo tee /etc/apt/sources.list.d/aicmd.list > /dev/null
+        sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/aicmd-repo.gpg /tmp/aicmd.gpg
+        echo "deb [signed-by=/etc/apt/trusted.gpg.d/aicmd-repo.gpg] https://haideryzai.github.io/aicmd-apt stable main" | sudo tee /etc/apt/sources.list.d/aicmd.list > /dev/null
     ```
 
 3.  **Install `aicmd`:**
