@@ -33,8 +33,9 @@
 
     First, import the GPG public key used to sign the repository. This ensures the packages you install are authentic and untampered with:
     ```bash
-    wget [https://haideryzai.github.io/aicmd-apt/aicmd-apt-repo-key.gpg](https://haideryzai.github.io/aicmd-apt/aicmd-apt-repo-key.gpg) -O /tmp/aicmd.gpg
-    sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/aicmd-repo.gpg /tmp/aicmd.gpg
+        wget https://haideryzai.github.io/aicmd-apt/aicmd-apt-repo-key.gpg -O /tmp/aicmd.gpg
+sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/aicmd-repo.gpg /tmp/aicmd.gpg
+echo "deb [signed-by=/etc/apt/trusted.gpg.d/aicmd-repo.gpg] https://haideryzai.github.io/aicmd-apt stable main" | sudo tee /etc/apt/sources.list.d/aicmd.list > /dev/null
     ```
 
     Next, add the repository URL to your `sources.list.d`, instructing `apt` where to fetch `aicmd` packages from. **Ensure you use the GitHub Pages URL:**
