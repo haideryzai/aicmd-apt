@@ -17,11 +17,12 @@
 * **Beginner-Friendly:** Great for new Linux users to learn commands quickly.
 * **Efficiency Boost:** Helps experienced users recall complex or less frequently used commands.
 
-## Installation
+## Installation (For Users)
 
 `aicmd` is designed for Debian/Ubuntu-based Linux systems.
 
-1.  **Ensure Prerequisites:** Make sure you have `curl` and `jq` installed on your system. These are usually available by default, but you can install them if needed:
+1.  **Ensure Prerequisites:**
+    Make sure you have `curl` and `jq` installed on your system. These are usually available by default, but you can install them if needed:
     ```bash
     sudo apt update
     sudo apt install curl jq
@@ -32,10 +33,11 @@
 
     First, import the GPG public key used to sign the repository. This ensures the packages you install are authentic and untampered with:
     ```bash
-    wget -O- [https://haideryzai.github.io/aicmd-apt/aicmd-apt-repo-key.gpg](https://haideryzai.github.io/aicmd-apt/aicmd-apt-repo-key.gpg) | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/aicmd-repo.gpg
+    wget [https://haideryzai.github.io/aicmd-apt/aicmd-apt-repo-key.gpg](https://haideryzai.github.io/aicmd-apt/aicmd-apt-repo-key.gpg) -O /tmp/aicmd.gpg
+    sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/aicmd-repo.gpg /tmp/aicmd.gpg
     ```
 
-    Next, add the repository URL to your `sources.list.d`, instructing `apt` where to fetch `aicmd` packages from:
+    Next, add the repository URL to your `sources.list.d`, instructing `apt` where to fetch `aicmd` packages from. **Ensure you use the GitHub Pages URL:**
     ```bash
     echo "deb [signed-by=/etc/apt/trusted.gpg.d/aicmd-repo.gpg] [https://haideryzai.github.io/aicmd-apt](https://haideryzai.github.io/aicmd-apt) stable main" | sudo tee /etc/apt/sources.list.d/aicmd.list > /dev/null
     ```
