@@ -1,0 +1,8 @@
+Origin: AICMD Project
+Label: AICMD APT Repository
+Codename: stable
+Architectures: amd64
+Components: main
+Description: APT repository for the aicmd AI-Powered Linux Command Assistant
+SignWith: 481C559EE92CBFFFA07AA2C1E894EFEC1920601A
+

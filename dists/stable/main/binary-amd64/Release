@@ -1,0 +1,5 @@
+Component: main
+Origin: AICMD Project
+Label: AICMD APT Repository
+Architecture: amd64
+Description: APT repository for the aicmd AI-Powered Linux Command Assistant

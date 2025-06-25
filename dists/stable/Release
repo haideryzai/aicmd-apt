@@ -1,0 +1,19 @@
+Origin: AICMD Project
+Label: AICMD APT Repository
+Codename: stable
+Date: Wed, 25 Jun 2025 20:24:45 UTC
+Architectures: amd64
+Components: main
+Description: APT repository for the aicmd AI-Powered Linux Command Assistant
+MD5Sum:
+ e2b956ba05799105c49eccf7d551ef89 531 main/binary-amd64/Packages
+ 982524157406e205754c08828fe5b17c 395 main/binary-amd64/Packages.gz
+ 57db4a5f9ae5e130300fb69895dc07a0 163 main/binary-amd64/Release
+SHA1:
+ 4368a4397581635140836cbbb96c3159505b5e3a 531 main/binary-amd64/Packages
+ 1b51282f5b2a27880532c880ab7d3244b12d0d11 395 main/binary-amd64/Packages.gz
+ 950568b79d1fdf65297cd7a99ca90f98e8e04fb7 163 main/binary-amd64/Release
+SHA256:
+ 9870c2c6cf338668e06f08f2b225469fe893a73424e5a93efca9a4aa767e3b3f 531 main/binary-amd64/Packages
+ c83829545734cd431f0af939f3707a651004f525901ed1ed5e98e8ab808064fb 395 main/binary-amd64/Packages.gz
+ 6380d44d9d7226e211d3842bf653c38388e49c0444925ccfecda177f00ec04c4 163 main/binary-amd64/Release

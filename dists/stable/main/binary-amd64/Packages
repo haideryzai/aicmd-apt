@@ -1,0 +1,15 @@
+Package: aicmd
+Version: 1.0.0
+Architecture: all
+Depends: curl, jq
+Maintainer: Haider <haiderzamanusafxay@gmail.com>
+Priority: optional
+Section: utils
+Filename: pool/main/a/aicmd/aicmd_1.0.0_all.deb
+Size: 1596
+SHA256: 4c554baefc4da46954d476dd7a70df10af9d10d176e45f749a4684f965644974
+SHA1: 9a6aad74708380ba9be57801e174dc4df80945ae
+MD5sum: ed81a64ac213f037de587a4ecb010423
+Description: AI-powered CLI to convert natural language to Linux commands.
+ Bash script that uses Google Gemini to return shell commands from natural language.
+
